@@ -21,11 +21,14 @@
     <string name="menu_copy">Копировать</string>
     <string name="menu_edit">Редактировать</string>
     <string name="menu_cancel">Отмена</string>
+    <string name="menu_change_category">Категория</string>
     <string name="menu_favorite">Избранное</string>
     <string name="menu_preview">Предварительный просмотр</string>
     <string name="menu_share">Поделиться</string>
     <string name="menu_about">О программе</string>
 
+    <string name="change_category_title">Выберите категорию</string>
+    <string name="change_category_message">Пожалуйста введите название категории</string>
     <string name="copy">Копировать</string>
 
     <string name="listview_updated_today">Сегодня</string>

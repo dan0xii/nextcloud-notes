@@ -21,11 +21,14 @@
     <string name="menu_copy">Αντιγραφή</string>
     <string name="menu_edit">Επεξεργασία</string>
     <string name="menu_cancel">Ακύρωση</string>
+    <string name="menu_change_category">Κατηγορία</string>
     <string name="menu_favorite">Αγαπημένο</string>
     <string name="menu_preview">Προεπισκόπηση</string>
     <string name="menu_share">Διαμοιρασμός</string>
     <string name="menu_about">Περί</string>
 
+    <string name="change_category_title">Επιλογή κατηγορίας</string>
+    <string name="change_category_message">Παρακαλώ δώστε ένα όνομα κατηγορίας</string>
     <string name="copy">Αντιγραφή</string>
 
     <string name="listview_updated_today">Σήμερα</string>

@@ -21,11 +21,14 @@
     <string name="menu_copy">Kopyala</string>
     <string name="menu_edit">Düzenle</string>
     <string name="menu_cancel">İptal</string>
+    <string name="menu_change_category">Kategori</string>
     <string name="menu_favorite">Sık Kullanılanlara Ekle</string>
     <string name="menu_preview">Önizleme</string>
     <string name="menu_share">Paylaş</string>
     <string name="menu_about">Hakkında</string>
 
+    <string name="change_category_title">Kategori seçin</string>
+    <string name="change_category_message">Lütfen bir kategori adı yazın</string>
     <string name="copy">Kopyala</string>
 
     <string name="listview_updated_today">Bugün</string>

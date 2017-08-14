@@ -21,11 +21,14 @@
     <string name="menu_copy">Copier</string>
     <string name="menu_edit">Éditer</string>
     <string name="menu_cancel">Annuler</string>
+    <string name="menu_change_category">Catégorie</string>
     <string name="menu_favorite">Favoris</string>
     <string name="menu_preview">Aperçu</string>
     <string name="menu_share">Partager</string>
     <string name="menu_about">À propos</string>
 
+    <string name="change_category_title">Choisir une catégorie</string>
+    <string name="change_category_message">Entrez un nom de catégorie s\'il vous plait</string>
     <string name="copy">Copier</string>
 
     <string name="listview_updated_today">Aujourd\'hui</string>
