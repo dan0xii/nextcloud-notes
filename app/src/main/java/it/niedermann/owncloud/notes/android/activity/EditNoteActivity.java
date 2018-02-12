@@ -23,6 +23,7 @@ public class EditNoteActivity extends AppCompatActivity implements BaseNoteFragm
     public static final String PARAM_NOTE_ID = "noteId";
 
     private BaseNoteFragment fragment;
+    private boolean refreshFragment = false;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -42,7 +43,11 @@ public class EditNoteActivity extends AppCompatActivity implements BaseNoteFragm
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        Log.d(getClass().getSimpleName(), "onNewIntent: "+intent.getLongExtra(PARAM_NOTE_ID, 0));
+        refreshFragment = false;
+        if (getNoteId() != (intent.getLongExtra(PARAM_NOTE_ID, 0))) {
+            fragment.onPrepareClose();
+            refreshFragment = true;
+        }
         setIntent(intent);
         createFragmentByPreference();
     }
@@ -78,7 +83,7 @@ public class EditNoteActivity extends AppCompatActivity implements BaseNoteFragm
     private void createFragment(long noteId, boolean edit) {
         // save state of the fragment in order to resume with the same note and originalNote
         Fragment.SavedState savedState = null;
-        if(fragment != null) {
+        if(fragment != null && !(refreshFragment)) {
             savedState = getFragmentManager().saveFragmentInstanceState(fragment);
         }
         if(edit) {
