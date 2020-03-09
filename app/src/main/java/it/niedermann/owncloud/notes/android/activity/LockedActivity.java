@@ -42,8 +42,8 @@ public abstract class LockedActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
+    protected void onDestroy() {
+        super.onDestroy();
         if (isTaskRoot()) {
             Notes.lock();
         }
