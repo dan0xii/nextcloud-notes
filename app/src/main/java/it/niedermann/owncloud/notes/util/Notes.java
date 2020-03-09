@@ -66,6 +66,7 @@ public class Notes extends Application {
     }
 
     public static void lock() {
+        Log.d(TAG, "Lock: ");
         locked = true;
     }
 

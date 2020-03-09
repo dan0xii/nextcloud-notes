@@ -45,6 +45,7 @@ public abstract class LockedActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         if (isTaskRoot()) {
+            Log.d(TAG, "onDestroy: Lock isTaskRoot=True");
             Notes.lock();
         }
     }
